@@ -33,8 +33,6 @@
               "color-01": "#F9F7F3",
               "color-02": "#1111110D",
               "color-03": "#B4F461",
-              "color-04": "rgb(233,233,233)",
-              "color-05": "rgb(255,255,255)",
             },
           },
         },
@@ -44,7 +42,7 @@
   <body class="font-lexend">
     <!-- header section styling start -->
     <header
-      class="container mx-auto bg-color-01 sticky px-2 md:px-32 top-0 border"
+      class="container mx-auto sticky px-2 md:px-32 top-0 backdrop-blur-lg"
     >
       <!-- navbar styling start -->
       <nav class="flex justify-between py-6 px-20 md:px-6 items-center">
@@ -60,12 +58,10 @@
           <h2 class="text-xl"><span id="main_taka"></span> BDT</h2>
         </div>
       </nav>
+
       <!-- navbar styling end -->
-    </header>
-    <!-- header section styling end -->
-    <main class="container mx-auto">
-      <!-- button styling start -->
-      <div class="flex justify-center mt-16 md:mt-20 gap-x-4">
+      <!-- Button Added -->
+      <div class="flex justify-center mt-16 pb-6 md:mt-20 gap-x-4">
         <button
           id="donation-button"
           onclick="clickDonateButton(this)"
@@ -81,6 +77,11 @@
           History
         </button>
       </div>
+    </header>
+    <!-- header section styling end -->
+    <main class="container mx-auto">
+      <!-- button styling start -->
+
       <!-- button styling end -->
       <!-- card section styling start -->
       <section id="donation-container" class="w-3/4 mx-auto space-y-6 my-6">
