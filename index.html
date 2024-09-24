@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Collect Donation for Flood Affected People</title>
     <!-- Lexend Font Added -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,8 +31,6 @@
           extend: {
             colors: {
               "color-01": "#F9F7F3",
-              "color-02": "#1111110D",
-              "color-03": "#B4F461",
             },
           },
         },
@@ -42,16 +40,16 @@
   <body class="font-lexend">
     <!-- header section styling start -->
     <header
-      class="container mx-auto sticky px-2 md:px-32 top-0 backdrop-blur-lg"
+      class="container flex flex-col gap-8 md:gap-12 mx-auto bg-color-01 sticky px-2 md:px-32 top-0"
     >
       <!-- navbar styling start -->
-      <nav class="flex justify-between py-6 px-20 md:px-6 items-center">
+      <nav class="flex justify-between py-6 px-12 md:px-6 items-center">
         <div>
-          <button class="btn btn-secondary">Blog</button>
+          <a class="btn btn-secondary" href="./blog.html">Blog</a>
         </div>
         <div class="flex items-center justify-center gap-x-3 max-sm:hidden">
           <img src="./assets/logo.png" alt="Donate Icon" />
-          <h1 class="text-xl font-semibold max-sm:hidden">Donate Bangladesh</h1>
+          <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
         </div>
         <div class="flex items-center justify-center gap-x-3">
           <img src="./assets/coin.png" alt="Coin Icon" />
@@ -61,7 +59,7 @@
 
       <!-- navbar styling end -->
       <!-- Button Added -->
-      <div class="flex justify-center mt-16 pb-6 md:mt-20 gap-x-4">
+      <div class="flex justify-center pb-6 gap-x-6">
         <button
           id="donation-button"
           onclick="clickDonateButton(this)"

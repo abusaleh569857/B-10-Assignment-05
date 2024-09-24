@@ -3,108 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donate Bangladesh by Sakib</title>
-    <!-- Lexend google font cannected -->
+    <title>Collect Donation for Flood Affected People</title>
+    <!-- Lexend Font Added -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- tailwind CSS Init -->
-    <link rel="stylesheet" href="../output/output.css" />
-
-    <!-- temporary link added for tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-lexend {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+    <!-- Added DaisyUI and Tailwind CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Customization Color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "color-01": "#F9F7F3",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="bg-white">
-    <!-- header section start -->
+  <body class="font-lexend">
+    <!-- header section styling start -->
     <header
-      class="container h-[150px] mx-auto bg-white sticky lg:mt-4 lg:mb-6 mt-4 pt-6 top-0 shadow-sm"
+      class="container mx-auto bg-color-01 sticky px-2 md:px-32 top-0 backdrop-blur-lg"
     >
-      <!-- navbar start -->
-      <nav
-        class="flex lg:justify-between justify-around lg:mt-6 mt-4 items-center"
-      >
+      <!-- navbar styling start -->
+      <nav class="flex justify-between py-6 px-20 md:px-6 items-center">
         <div>
-          <button class="btn btn-success">Home</button>
+          <a class="btn btn-secondary" href="./index.html">Home</a>
         </div>
-        <div class="flex items-center justify-center gap-x-3">
-          <img
-            src="../B10A5-DOM-Quest-Build-and-Manipulate/assets/logo.png"
-            alt="logo"
-          />
+        <div class="flex items-center justify-center gap-x-3 max-sm:hidden">
+          <img src="./assets/logo.png" alt="Donate Icon" />
           <h1 class="text-xl font-semibold max-sm:hidden">Donate Bangladesh</h1>
         </div>
         <div class="flex items-center justify-center gap-x-3">
-          <img
-            src="../B10A5-DOM-Quest-Build-and-Manipulate/assets/coin.png"
-            alt="conin"
-          />
-          <h2 class="lg:text-xl text-[16px]">
-            <span id="main_taka"> </span> BDT
-          </h2>
+          <img src="./assets/coin.png" alt="Coin Icon" />
+          <h2 class="text-xl"><span id="main_taka"></span> BDT</h2>
         </div>
       </nav>
-      <!-- navbar end -->
+
+      <!-- navbar styling end -->
     </header>
-    <!-- header section end -->
-    <!-- main part start -->
-    <main class="container mx-auto m-6">
-      <div class="join join-vertical w-full">
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" checked="checked" />
-          <div class="collapse-title text-xl font-medium">
-            How can I make a donation?
-          </div>
-          <div class="collapse-content">
-            <p>
-              You can make a donation through our website by clicking on the
-              "Donate Now" button. This will take you to a secure payment page
-              where you can choose your preferred payment method, enter your
-              details, and complete the donation process. If you prefer, you can
-              also donate via bank transfer or by mailing a check. Please
-              contact us for more information on alternative donation methods.
-            </p>
+    <main>
+      <div class="flex flex-col gap-5">
+        <div class="flex justify-center">
+          <div
+            class="w-full md:w-4/5 collapse bg-base-200 border border-base-700 rounded-xl"
+          >
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              Click to open this one and close others
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
           </div>
         </div>
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title text-xl font-medium">
-            Is my donation tax-deductible?
-          </div>
-          <div class="collapse-content">
-            <p>
-              Yes, donations made to our organization are generally
-              tax-deductible. We are a registered nonprofit organization, and
-              you will receive a receipt for your donation that can be used for
-              tax purposes. We recommend consulting with a tax professional to
-              understand how your donation may affect your individual tax
-              situation.
-            </p>
+
+        <div class="flex justify-center">
+          <div
+            class="w-full md:w-4/5 collapse bg-base-200 border border-base-700 rounded-xl"
+          >
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              Click to open this one and close others
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
           </div>
         </div>
-        <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" />
-          <div class="collapse-title text-xl font-medium">
-            How will my donation be used?
+
+        <div class="flex justify-center">
+          <div
+            class="w-full md:w-4/5 collapse bg-base-200 border border-base-700rounded-xl"
+          >
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              Click to open this one and close others
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
           </div>
-          <div class="collapse-content">
-            <p>
-              Your donation will directly support our programs and initiatives
-              aimed at [specific cause, e.g., alleviating hunger, providing
-              educational resources, etc.]. We prioritize transparency and
-              regularly provide updates on how funds are allocated and the
-              impact of your contribution. You can find detailed reports on our
-              website, or sign up for our newsletter to stay informed about our
-              projects and initiatives.
-            </p>
+        </div>
+
+        <div class="flex justify-center">
+          <div
+            class="w-full md:w-4/5 collapse bg-base-200 border border-base-700rounded-xl"
+          >
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              Click to open this one and close others
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
           </div>
         </div>
       </div>
