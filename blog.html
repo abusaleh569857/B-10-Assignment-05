@@ -11,6 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Added FontAwesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
       .font-lexend {
         font-family: "Lexend", sans-serif;
@@ -40,7 +48,7 @@
   <body class="font-lexend">
     <!-- header section styling start -->
     <header
-      class="container mx-auto bg-color-01 sticky px-2 md:px-32 top-0 backdrop-blur-lg"
+      class="container mx-auto bg-color-01 sticky px-2 md:px-32 top-0 backdrop-blur-lg z-10"
     >
       <!-- navbar styling start -->
       <nav class="flex justify-between py-6 px-20 md:px-6 items-center">
@@ -60,59 +68,97 @@
       <!-- navbar styling end -->
     </header>
     <main>
-      <div class="flex flex-col gap-5">
+      <div class="flex flex-col gap-5 mt-8">
+        <div class="flex flex-row justify-center">
+          <div class="w-[90%] md:w-[76%] flex gap-2">
+            <h1 class="text-3xl md:text-5xl font-bold">Important FAQ</h1>
+            <i
+              class="fa-solid fa-person-circle-question text-3xl md:text-5xl"
+            ></i>
+          </div>
+        </div>
         <div class="flex justify-center">
           <div
-            class="w-full md:w-4/5 collapse bg-base-200 border border-base-700 rounded-xl"
+            class="w-[90%] md:w-[76%] collapse bg-base-200 border border-base-700 rounded-xl"
           >
             <input type="radio" name="my-accordion-1" checked="checked" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              What is the Document Object Model (DOM)?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p class="text-gray-500">
+                Answer : The Document Object Model (DOM) is a programming
+                interface for web documents. It represents the page so that
+                programs can change the document structure, style, and content.
+                The DOM represents the document as nodes and objects; that way,
+                programming languages can interact with the page.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="flex justify-center">
           <div
-            class="w-full md:w-4/5 collapse bg-base-200 border border-base-700 rounded-xl"
+            class="w-[90%] md:w-[76%] collapse bg-base-200 border border-base-700 rounded-xl"
           >
             <input type="radio" name="my-accordion-1" checked="checked" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              How do you select an element from the DOM?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p class="text-gray-500">
+                answer : The getElementById() method of the Document interface
+                returns an Element object representing the element whose id
+                property matches the specified string. Since element IDs are
+                required to be unique if specified, they're a useful way to get
+                access to a specific element quickly.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="flex justify-center">
           <div
-            class="w-full md:w-4/5 collapse bg-base-200 border border-base-700rounded-xl"
+            class="w-[90%] md:w-[76%] collapse bg-base-200 border border-base-700 rounded-xl"
           >
             <input type="radio" name="my-accordion-1" checked="checked" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              What is event delegation in the context of the DOM, and why is it
+              useful?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p class="text-gray-500">
+                Answer : Event delegation is a design pattern in JavaScript used
+                to efficiently manage and handle events on multiple child
+                elements by attaching a single event listener to a common
+                ancestor element.Instead of attaching a click handler to each
+                item, event delegation allows you to attach a single listener to
+                the parent container. This results in less code and better
+                performance, especially for large sets of elements. Dynamism:
+                Event delegation is particularly useful when dealing with
+                dynamic content.That's why it is Useful.
+              </p>
             </div>
           </div>
         </div>
 
-        <div class="flex justify-center">
+        <div class="flex justify-center pb-8">
           <div
-            class="w-full md:w-4/5 collapse bg-base-200 border border-base-700rounded-xl"
+            class="w-[90%] md:w-[76%] collapse bg-base-200 border border-base-700 rounded-xl"
           >
             <input type="radio" name="my-accordion-1" checked="checked" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              How do you manipulate an element's attributes and styles using the
+              DOM?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p class="text-gray-500">
+                Answer : The classList object only provide methods to change the
+                class of an element. If you want to change other attributes like
+                id , href , or src , you can use the setAttribute() method. The
+                setAttribute() method accepts two arguments: The name of the
+                attribute to set.
+              </p>
             </div>
           </div>
         </div>
