@@ -40,26 +40,30 @@
   <body class="font-lexend">
     <!-- header section styling start -->
     <header
-      class="container flex flex-col gap-8 md:gap-12 mx-auto bg-color-01 sticky px-2 md:px-32 top-0"
+      class="container flex flex-col gap-8 md:gap-12 mx-auto sticky top-0 backdrop-blur-lg"
     >
       <!-- navbar styling start -->
-      <nav class="flex justify-between py-6 px-12 md:px-6 items-center">
-        <div>
-          <a class="btn btn-secondary" href="./blog.html">Blog</a>
-        </div>
-        <div class="flex items-center justify-center gap-x-3 max-sm:hidden">
-          <img src="./assets/logo.png" alt="Donate Icon" />
-          <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
-        </div>
-        <div class="flex items-center justify-center gap-x-3">
-          <img src="./assets/coin.png" alt="Coin Icon" />
-          <h2 class="text-xl"><span id="main_taka"></span> BDT</h2>
-        </div>
-      </nav>
+      <div class="bg-color-01">
+        <nav
+          class="flex justify-between md:mx-32 py-6 px-12 md:px-6 items-center"
+        >
+          <div>
+            <a class="btn btn-secondary" href="./blog.html">Blog</a>
+          </div>
+          <div class="flex items-center justify-center gap-x-3 max-sm:hidden">
+            <img src="./assets/logo.png" alt="Donate Icon" />
+            <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+          </div>
+          <div class="flex items-center justify-center gap-x-3">
+            <img src="./assets/coin.png" alt="Coin Icon" />
+            <h2 class="text-xl"><span id="main_taka"></span> BDT</h2>
+          </div>
+        </nav>
+      </div>
 
       <!-- navbar styling end -->
       <!-- Button Added -->
-      <div class="flex justify-center pb-6 gap-x-6">
+      <div class="flex justify-center pb-6 gap-x-6 border-b-2 border-gray-200">
         <button
           id="donation-button"
           onclick="clickDonateButton(this)"
