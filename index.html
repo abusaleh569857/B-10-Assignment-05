@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en " class="theme-light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
           </div>
           <div class="flex items-center justify-center gap-x-3">
             <img src="./assets/coin.png" alt="Coin Icon" />
-            <h2 class="text-xl"><span id="main_taka"></span> BDT</h2>
+            <h2 class="text-xl"><span id="initial-balance"></span> BDT</h2>
           </div>
         </nav>
       </div>
@@ -97,7 +97,7 @@
               <button class="btn">
                 <img src="./assets/coin.png" alt="Coin Image" />
                 <span class="text-gray-600">
-                  <span id="flood_Noakhali"></span> BDT</span
+                  <span id="noakhali-balance"></span> BDT</span
                 >
               </button>
               <h2 class="text-xl text-black font-bold">
@@ -111,7 +111,7 @@
               </p>
               <input
                 type="text"
-                id="donateMoneyForNoakhali"
+                id="donate-money-for-noakhali"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
               />
@@ -139,7 +139,7 @@
               <button class="btn">
                 <img src="./assets/coin.png" alt="Coin Image" />
                 <span class="text-gray-600"
-                  ><span id="feni_amount"> </span> BDT</span
+                  ><span id="feni-balance"> </span> BDT</span
                 >
               </button>
               <h2 class="text-xl text-black font-bold">
@@ -155,7 +155,7 @@
               </p>
               <input
                 type="text"
-                id="inputFeni"
+                id="donate-money-for-feni"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
               />
@@ -186,7 +186,7 @@
               <button class="btn">
                 <img src="./assets/coin.png" alt="Coin Image" />
                 <span class="text-gray-600"
-                  ><span id="quata_mov"> </span> BDT</span
+                  ><span id="quota-balance"> </span> BDT</span
                 >
               </button>
               <h2 class="text-xl text-black font-bold">
@@ -203,7 +203,7 @@
               </p>
               <input
                 type="text"
-                id="inputQuta"
+                id="donate-money-for-Quota"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
               />
@@ -223,7 +223,10 @@
       <!-- Card Section End -->
 
       <!-- History Section Start -->
-      <section id="history-container"></section>
+      <section
+        id="history-container"
+        class="lg:w-[70%] w-full mx-auto space-y-9 my-6 hidden"
+      ></section>
       <!-- History Section End -->
     </main>
 

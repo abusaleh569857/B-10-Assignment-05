@@ -1,22 +1,25 @@
-
-
 // Access Button & Container
+
 const historySection = document.getElementById("history-container");
 const donationSection = document.getElementById("donation-container");
-const historyBtn = document.getElementById("history-button");
-const donatinBtn = document.getElementById("donation-button");
+const historyButton = document.getElementById("history-button");
+const donationButton = document.getElementById("donation-button");
+
 // Access All Balance
-const mainBalance = document.getElementById("main_taka");
-const noakhaliBalance = document.getElementById("flood_Noakhali");
-const feniBalance = document.getElementById("feni_amount");
-const quotaBalance = document.getElementById("quata_mov");
+
+const mainBalance = document.getElementById("initial-balance");
+const noakhaliBalance = document.getElementById("noakhali-balance");
+const feniBalance = document.getElementById("feni-balance");
+const quotaBalance = document.getElementById("quota-balance");
 
 // Access Input Item
-const inputNoakhaly = document.getElementById("input_noakhaly");
-const inputFeni = document.getElementById("inputFeni");
-const inputQuta = document.getElementById("inputQuta");
+
+const donateMoneyForNoakhali = document.getElementById("donate-money-for-noakhali");
+const donateMoneyForFeni = document.getElementById("donate-money-for-feni");
+const donateMoneyForQuota = document.getElementById("donate-money-for-Quota");
 
 // Access Modal Id
+
 const modal = document.getElementById("myModal");
 const openModalBtn = document.getElementById("openModalBtn");
 const closeModalBtn = document.getElementById("closeModalBtn");
@@ -36,12 +39,12 @@ function clickDonateButton(e) {
     historySection.classList.remove("hidden");
     donationSection.classList.add("hidden");
     e.classList.remove("btn-outline");
-    donatinBtn.classList.add("btn-outline");
+    donationButton.classList.add("btn-outline");
   } else if (e.innerText === "Donation") {
     historySection.classList.add("hidden");
     donationSection.classList.remove("hidden");
     e.classList.remove("btn-outline");
-    historyBtn.classList.add("btn-outline");
+    historyButton.classList.add("btn-outline");
   }
 }
 
@@ -70,6 +73,7 @@ function calculateDonation(e) {
 
   if (e.value === "noakhali") {
     const donateAmount = Number(donateMoneyForNoakhali.value);
+    console.log(donateAmount);
 
     if (donateAmount < 0){
       alert("Negative amount donation is not possible! Please enter correct value");
@@ -86,8 +90,8 @@ function calculateDonation(e) {
 
         const newDiv = document.createElement("div");
         newDiv.innerHTML = `
-            <div class="w-full h-auto px-12 py-5 border border-gray-300 rounded-xl">
-                <p class="text-xl font-bold text-black">${donateAmount} Taka is Donate for Flood at Noakhali, Bangladesh</p>
+            <div class="w-full h-auto px-10 py-6 border border-gray-300 rounded-xl ">
+                <p class="text-xl font-bold text-black">${donateAmount} Taka  Donate for Flood at Noakhali, Bangladesh</p>
 
                 <p class="text-sm mt-2">Date: ${new Date()}</p>
 
@@ -103,7 +107,7 @@ function calculateDonation(e) {
     }
   } // Calculate for feni flood
   else if (e.value === "feni") {
-    const donateAmount = Number(inputFeni.value);
+    const donateAmount = Number(donateMoneyForFeni.value);
 
     if (donateAmount < 0){
       alert("Negative amount donation is not possible! Please enter correct value");
@@ -120,10 +124,13 @@ function calculateDonation(e) {
 
         const newDiv = document.createElement("div");
         newDiv.innerHTML = `
-            <div  class="w-full h-auto px-12 py-5 border border-gray-300 rounded-xl ">
-                <p class="text-xl font-bold text-black">${donateAmount} Taka is Donate for Flood Relief in Feni, Bangladesh </p>
+            <div  class="w-full h-auto px-10 py-6 border border-gray-300 rounded-xl">
+             
+                  <p class="text-xl font-bold text-black">${donateAmount} Taka  Donate for Flood Relief in Feni, Bangladesh </p>
 
-                <p class="text-sm mt-2">Date: ${new Date()}</p>
+                  <p class="text-sm mt-2">Date: ${new Date()}</p>
+               
+
 
             </div>
         `;
@@ -136,7 +143,7 @@ function calculateDonation(e) {
       alert("Please enter correct value");
     }
   } else if (e.value === "quta") {
-    const donateAmount = Number(inputQuta.value);
+    const donateAmount = Number(donateMoneyForQuota.value);
 
     if (donateAmount < 0){
       alert("Negative amount donation is not possible! Please enter correct value");
@@ -154,7 +161,7 @@ function calculateDonation(e) {
         const newDiv = document.createElement("div");
         newDiv.innerHTML = `
             <div  class="w-full h-auto px-12 py-5 border border-gray-300 rounded-xl ">
-                <p class="text-xl font-bold text-black">${donateAmount} Taka is Donate for Aid for Injured in the Quota Movement </p>
+                <p class="text-xl font-bold text-black">${donateAmount} Taka  Donate for Aid for Injured in the Quota Movement </p>
 
                 <p class="text-sm mt-2">Date: ${new Date()}</p>
 
