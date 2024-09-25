@@ -1,34 +1,36 @@
 
 
-// file added
+// Access Button & Container
 const historySection = document.getElementById("history-container");
 const donationSection = document.getElementById("donation-container");
 const historyBtn = document.getElementById("history-button");
 const donatinBtn = document.getElementById("donation-button");
-// taka
+// Access All Balance
 const mainBalance = document.getElementById("main_taka");
 const noakhaliBalance = document.getElementById("flood_Noakhali");
 const feniBalance = document.getElementById("feni_amount");
 const quotaBalance = document.getElementById("quata_mov");
 
-// input field
+// Access Input Item
 const inputNoakhaly = document.getElementById("input_noakhaly");
 const inputFeni = document.getElementById("inputFeni");
 const inputQuta = document.getElementById("inputQuta");
 
-// modal function
+// Access Modal Id
 const modal = document.getElementById("myModal");
 const openModalBtn = document.getElementById("openModalBtn");
 const closeModalBtn = document.getElementById("closeModalBtn");
 
 
 
-// modal close button
+// Modal Close 
+
 function Close() {
   modal.classList.add("hidden");
 }
 
-// donation function
+//  Button functionality 
+
 function clickDonateButton(e) {
   if (e.innerText === "History") {
     historySection.classList.remove("hidden");
@@ -43,20 +45,23 @@ function clickDonateButton(e) {
   }
 }
 
-// initilize amount
+// Initialize The Started Balance
+
 let initialBalance = 10000;
 let initialBalanceOfNoakhali = 2000;
 let initialBalanceOfFeni = 1500;
 let initialBalanceOfQuota = 2500;
 
-// inner
+// Set Balance By using innerText
+
 mainBalance.innerText = initialBalance;
 noakhaliBalance.innerText =  initialBalanceOfNoakhali;
 feniBalance.innerText = initialBalanceOfFeni;
 quotaBalance.innerText = initialBalanceOfQuota;
 
 
-// donate function
+// Calculate Donation 
+
 function calculateDonation(e) {
 
   console.log(e.value);
@@ -89,7 +94,7 @@ function calculateDonation(e) {
             </div>
         `;
         historySection.appendChild(newDiv);
-        // the moadl function
+        // Modal function 
         modal.classList.remove("hidden");
         modal.classList.add("flex");
       }
@@ -123,7 +128,7 @@ function calculateDonation(e) {
             </div>
         `;
         historySection.appendChild(newDiv);
-        // the moadl function
+      
         modal.classList.remove("hidden");
         modal.classList.add("flex");
       }
@@ -156,7 +161,7 @@ function calculateDonation(e) {
             </div>
         `;
         historySection.appendChild(newDiv);
-        // the moadl function
+     
         modal.classList.remove("hidden");
         modal.classList.add("flex");
       }
